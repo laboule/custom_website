@@ -1,0 +1,299 @@
+body
+{
+	background-color: #ecfffb;
+	/*opacity: 0.12;*/
+
+	overflow-x: hidden;
+
+	font-family: 'Roboto';
+	color: #2d767f;
+}
+
+[class*="col"]
+{
+	/*border: 1px red solid;*/
+}
+
+#container
+{
+	border:1px black solid;
+	display: flex; 
+	justify-content: space-between;
+	align-items:flex-start;
+}
+
+svg {
+	overflow: visible !important;
+	/*flex-grow: 1;*/
+	/*border: 1px red solid;*/
+}
+
+#list_stack
+{
+	flex-grow: 1;
+	border: 1px red solid;
+}
+
+
+#circle_1, #circle_2, #circle_3 {
+  transform: scale(0.8);
+
+  transform-origin: 98px 511px; }
+
+#circle_1 {
+  animation: pulse 4s ease-in-out 0s infinite; }
+
+#circle_2 {
+  animation: pulse 4s ease-in-out 1.3333s infinite; }
+
+#circle_3 {
+  animation: pulse 4s ease-in-out 2.6666s infinite; }
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9); }
+  to {
+    transform: scale(1.5);
+    opacity: 0; } }
+
+#line_twisted {
+  stroke-dasharray: 20 20;
+  animation: 100s linear move_line infinite; }
+
+@keyframes move_line {
+  from {
+    stroke-dashoffset: 0; }
+  to {
+    stroke-dashoffset: -2000; } }
+
+#line_point_1 {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 368.5px 238.5px; }
+
+#line_point_2 {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 275px 410px; }
+
+#line_point_1:hover {
+  transform: scale(1.5);
+  fill: #FF2245;
+  transform-origin: 368.5px 238.5px; }
+
+#line_point_2:hover {
+  transform: scale(1.5);
+  fill: #FF2245;
+  transform-origin: 275px 410px; }
+
+
+
+	#copy_icon
+	{
+		background-color: red;
+		padding:5px 5px 5px 5px;
+	}
+	
+	#copy_icon:hover {
+		background-color: green;
+		
+	}
+
+	#email
+	{
+		background-color: grey;
+		padding: 5px 5px 5px 8px;
+		border-radius: 10px 0px 0px 10px;
+	}
+
+	.tippy-tooltip.custom-theme {
+	  background: none;
+	}
+
+	h2
+	{
+		color: #1e6262;
+		letter-spacing: 3px;
+	}
+	footer
+	{
+		background-color: #b4f1f1;
+	}
+
+	.list-group *
+	{
+		background-color: #FFEABE;
+		
+	}
+
+	.list-group
+	{
+		color: #2d767f;
+		letter-spacing: 2px;
+	}
+
+
+
+	li img
+	{
+		width: 40px;
+		height: auto;
+	}
+
+	.last_stack img
+	{
+		width: 30px;
+	}
+
+
+
+	.carousel-control-prev-icon, .carousel-control-next-icon
+	{
+		background-image: none;
+		color: #2d767f;
+	}
+
+	 .carousel-control-next-icon
+	 {
+	 	margin-right: 40px;
+	 }
+
+
+
+	.carousel-item p
+	{
+		color:black;
+		/*font-family: serif;*/
+	}
+
+
+	.carousel-item h5
+	{
+		color:black;
+	}
+	
+	.list_stack img
+	{
+		transition: transform 0.5s, opacity 0.5s;
+	}
+
+	.list_stack img:hover
+	{
+		transform: scale(1.1);
+		opacity: 0.8;
+	}
+
+	footer img
+	{
+		transition: opacity 300ms;
+		cursor: pointer;
+		max-width: 40px;
+		height: auto;
+	}
+
+	footer img:hover
+	{
+		opacity: 0.8;
+	}
+
+
+
+  	.swiper-slide img
+  	{
+  		position: absolute;
+  		top: 0px;
+  		width: 100%;
+  		height: auto;
+  		
+  	}
+
+  	.title-slide
+  	{
+  		color: white;
+  		font-size: 16px;
+
+  	}
+  	.box-slide
+  	{
+  		position: absolute;
+  		left:0px;
+  		top: 10%;
+  		opacity: 1;
+  		max-width: 70%;
+  		background-color: #9EF3F3;
+  		padding-left: 10px;
+  		padding-right: 15px;
+  		text-align: left;
+  		padding-bottom: 5px;
+  		padding-top: 5px;
+  		color: #2d767f;
+  		font-size: 14px;
+  	}
+
+  	.swiper-pagination-h
+  	{
+
+  	}
+  	.swiper-pagination-h .swiper-pagination-bullet
+  	{
+  		background-color: #2d767f;
+  		width: 20px;
+  		height: 20px;
+
+  	}
+  	.swiper-pagination-v .swiper-pagination-bullet
+  	{
+  		background-color: orange;
+  		width: 15px;
+  		height: 15px;
+
+  	}
+
+  	.swiper-container
+  	{
+  		position: relative;
+  		width: 100%;
+  		margin: 1px;
+  		height: 280px;
+
+  	}
+
+ @media (min-width: 530px) { 
+	.swiper-container
+	 {
+	 	height: 300px;
+	 }
+ }
+    	 
+  	
+
+@media (min-width: 768px) { 
+	.swiper-container
+	 {
+	 	height: 400px;
+	 }
+ }
+
+@media (min-width: 992px) { 
+	.swiper-container
+	 {
+	 	height: 500px;
+	 }
+	.swiper-slide img
+  	{
+  	
+  	max-width: 95%;	
+  		
+  	}
+ }
+
+
+@media (min-width: 1200px) { 
+
+	.swiper-container
+	 {
+	 	height: 580px;
+	 }
+
+ }
+
+
+   
