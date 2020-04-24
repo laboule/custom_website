@@ -10,6 +10,22 @@ body
 
 }
 
+#sub_contact
+{
+	width: 100%;
+	font-size: 1.2em;
+	margin-top: -10px;
+	text-align: center;
+    border-bottom: 1px solid #1e6262; 
+    line-height: 0.1em;
+}
+
+#sub_contact span
+{
+	background-color: #ecfffb;
+	padding: 0px 10px 0px 10px;
+}
+
 [class*="col"]
 {
 	/*border: 1px red solid;*/
